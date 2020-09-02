@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/reactodo/static/js/main.74e6e7ed.chunk.js",
+    "main.js.map": "/reactodo/static/js/main.74e6e7ed.chunk.js.map",
+    "runtime-main.js": "/reactodo/static/js/runtime-main.fe853137.js",
+    "runtime-main.js.map": "/reactodo/static/js/runtime-main.fe853137.js.map",
+    "static/js/2.ffe6ef3c.chunk.js": "/reactodo/static/js/2.ffe6ef3c.chunk.js",
+    "static/js/2.ffe6ef3c.chunk.js.map": "/reactodo/static/js/2.ffe6ef3c.chunk.js.map",
+    "index.html": "/reactodo/index.html",
+    "precache-manifest.785f7762e31c9561927159d5eeee69df.js": "/reactodo/precache-manifest.785f7762e31c9561927159d5eeee69df.js",
+    "service-worker.js": "/reactodo/service-worker.js",
+    "static/js/2.ffe6ef3c.chunk.js.LICENSE.txt": "/reactodo/static/js/2.ffe6ef3c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe853137.js",
+    "static/js/2.ffe6ef3c.chunk.js",
+    "static/js/main.74e6e7ed.chunk.js"
+  ]
+}
