@@ -1,10 +1,11 @@
 import React from 'react';
+import TodoList from './TodoList';
 
 const App = () => {
   return (
-    <div>
-      <h1>This is going to be fun!!</h1>
-    </div>
+    <React.Fragment>
+      <TodoList />
+    </React.Fragment>
   );
 
 } 
