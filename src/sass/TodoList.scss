@@ -1,0 +1,15 @@
+$list-color : #fff;
+
+
+.todo__list{
+    background: $list-color;
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 0.25rem;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}

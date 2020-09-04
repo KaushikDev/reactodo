@@ -1,0 +1,29 @@
+.todo__item{
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: center;
+
+
+    p, .normal{
+       width: auto;
+       font-size: 1.1rem;
+    }
+
+    span{
+        width: auto;
+        font-weight: bolder;
+        color:#EC407A ;
+    }
+
+    .completed{
+        text-decoration-line: line-through;
+        text-decoration-color: #888;
+        color: #888;
+        font-style: italic;
+    }
+}

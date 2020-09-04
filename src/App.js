@@ -1,11 +1,12 @@
 import React from 'react';
-import TodoList from './TodoList';
+import TodoList from './components/TodoList';
+import "./sass/App.scss";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="app">
       <TodoList />
-    </React.Fragment>
+    </div>
   );
 
 } 

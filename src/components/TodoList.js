@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
+import "../sass/TodoList.scss";
 
 
 const TodoList = () => {
     const [todos, setTodos] = useState([]);  
 
     const addToList = ( task ) => {
-        const updatedTodoList = [ task, ...todos];
+        const updatedTodoList = [ ...todos, task];
         setTodos(updatedTodoList);
     }
 
@@ -23,12 +24,12 @@ const TodoList = () => {
         setTodos(updatedTodos);
 }
     return(
-        <React.Fragment>
+        <div className="todo__list">
             <TodoForm addToList={addToList} />
             {todos.length ? todos.map((todo, index) => {
                 return <TodoItem key={`${index} - ${todo}`} todo={todo} index={index} removeTodo={removeTodo} markStatus={markStatus}/>
-            }) : "Enter your first todo" }
-        </React.Fragment>
+            }) : "Add a todo to get started" }
+        </div>
     );
 
 }
