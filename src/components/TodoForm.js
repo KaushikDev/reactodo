@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 import "../sass/TodoForm.scss";
 
 const TodoForm = ({ addToList }) => {
@@ -6,23 +8,29 @@ const TodoForm = ({ addToList }) => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-    
-    if(!task.text || task.text.trim() === "") return;
+
+    if (!task.text || task.text.trim() === "") return;
 
     addToList(task);
 
-    setTask({text: "", done: false});
+    setTask({ text: "", done: false });
   };
 
   return (
-    <form onSubmit={event => onFormSubmit(event)}>
-      <input className="form__fields"
+    <form onSubmit={(event) => onFormSubmit(event)}>
+      <input
+        className="form__fields"
         type="text"
-        placeholder="Enter a task..."
+        placeholder="Add a new task"
         value={task.text}
-        onChange={event => setTask({ text: event.target.value, done: false })}
+        onChange={(event) => setTask({ text: event.target.value, done: false })}
       />
-      <button className="form__fields">ADD</button>
+      <button className="form__fields">
+        <FontAwesomeIcon
+          icon={faPlusCircle}
+          style={{ color: "#4CAF50", fontSize: "1.75rem" }}
+        />
+      </button>
     </form>
   );
 };

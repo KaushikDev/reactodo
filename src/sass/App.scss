@@ -1,3 +1,7 @@
+@font-face {
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+    font-family: "Montserrat", sans-serif;
+  }
 $background-color: #EC407A;
 
 
@@ -5,7 +9,7 @@ $background-color: #EC407A;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "nunito", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .app{
@@ -17,5 +21,6 @@ $background-color: #EC407A;
     justify-content: center;
     align-items: center;
 }
+
 
 

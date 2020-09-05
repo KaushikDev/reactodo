@@ -1,5 +1,5 @@
 .todo__item{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
     padding: 1rem;
     width: 100%;
     height: auto;
@@ -11,13 +11,15 @@
 
     p, .normal{
        width: auto;
-       font-size: 1.1rem;
+       font-size: 1.2rem;
+       cursor: pointer;
     }
 
     span{
         width: auto;
         font-weight: bolder;
         color:#EC407A ;
+        
     }
 
     .completed{

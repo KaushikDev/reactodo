@@ -1,5 +1,5 @@
 form{
-    padding: 1rem;
+    padding:1rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -7,16 +7,26 @@ form{
     justify-content: center;
     align-items: center;
 
+
+    
+   
+
     input{
         width: 80%;
     }
 
+    button{
+        width:auto;
+        background: transparent;
+        border: none;
+    }
+
     .form__fields{
-        margin: 1rem;
+        margin: 0.5rem;
         padding: 0.25rem;
         height: 2rem;
         border-radius: 0.25rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         outline: none;
     }
 

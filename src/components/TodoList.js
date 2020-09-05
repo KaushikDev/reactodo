@@ -28,7 +28,7 @@ const TodoList = () => {
             <TodoForm addToList={addToList} />
             {todos.length ? todos.map((todo, index) => {
                 return <TodoItem key={`${index} - ${todo}`} todo={todo} index={index} removeTodo={removeTodo} markStatus={markStatus}/>
-            }) : "Add a todo to get started" }
+            }) : "Add a task to get started !" }
         </div>
     );
 
