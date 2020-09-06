@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9315763cd2509b14f70f96d9957bd836",
+    "revision": "5e9e6b9e8a57dfebbab7d1b88c75f2bb",
     "url": "/reactodo/index.html"
   },
   {
-    "revision": "3217f2f65e3c5c2b430e",
-    "url": "/reactodo/static/css/main.b702ec15.chunk.css"
+    "revision": "f67fedd96b140891f0cd",
+    "url": "/reactodo/static/css/main.d27c20cd.chunk.css"
   },
   {
     "revision": "bb58b1b9edf528b1e43f",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactodo/static/js/2.22ea1752.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3217f2f65e3c5c2b430e",
+    "revision": "f67fedd96b140891f0cd",
     "url": "/reactodo/static/js/main.7b4acab4.chunk.js"
   },
   {
