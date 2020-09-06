@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinusCircle } from "@fortawesome/free-solid-svg-icons";
+import { faMinusCircle, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import "../sass/TodoItem.scss";
 
 
@@ -23,7 +23,7 @@ const TodoItem = ({ todo, index, removeTodo, markStatus }) => {
         onClick={() => removeTodo(index)}
         style={{ cursor: "pointer" }}
       >
-       <FontAwesomeIcon icon={faMinusCircle} />
+       <FontAwesomeIcon icon={faTrashAlt} />
        
       </span>
     </div>

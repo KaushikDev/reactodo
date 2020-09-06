@@ -21,7 +21,11 @@ const TodoList = () => {
     const markStatus = (index) => {
         const updatedTodos = [...todos];
         updatedTodos[index].done = !updatedTodos[index].done;
-        setTodos(updatedTodos);
+        //setTodos(updatedTodos);
+        const doneTodos = updatedTodos.filter(todo => {if(todo.done) return todo});
+        const notDoneTodos = updatedTodos.filter(todo => {if(!todo.done) return todo});
+        setTodos([...notDoneTodos, ...doneTodos]);
+
 }
     return(
         <div className="todo__list">
