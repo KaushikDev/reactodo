@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusCircle, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlusCircle, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import "../sass/TodoForm.scss";
 
 const TodoForm = ({ addToList }) => {
@@ -25,12 +25,7 @@ const TodoForm = ({ addToList }) => {
         value={task.text}
         onChange={(event) => setTask({ text: event.target.value, done: false })}
       />
-      <button className="form__fields">
-        {/* <FontAwesomeIcon
-          icon={faPlusCircle}
-          style={{ color: "#2E7D32", fontSize: "1.75rem" }}
-        /> */}Add
-      </button>
+      <button className="form__fields">Add</button>
     </form>
   );
 };

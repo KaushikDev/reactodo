@@ -1,4 +1,4 @@
-$list-color : repeating-linear-gradient(45deg, rgb(27, 27, 27) 0px, rgb(27, 27, 27) 97px,rgb(24, 24, 24) 97px, rgb(24, 24, 24) 194px,rgb(20, 20, 20) 194px, rgb(20, 20, 20) 291px);
+$list-color :  linear-gradient(45deg, rgba(99, 165, 225, 0.5) 0%, rgba(99, 165, 225, 0.5) 14.286%,rgba(93, 143, 222, 0.5) 14.286%, rgba(93, 143, 222, 0.5) 28.572%,rgba(87, 120, 218, 0.5) 28.572%, rgba(87, 120, 218, 0.5) 42.858%,rgba(81, 98, 215, 0.5) 42.858%, rgba(81, 98, 215, 0.5) 57.144%,rgba(74, 75, 211, 0.5) 57.144%, rgba(74, 75, 211, 0.5) 71.43%,rgba(68, 53, 208, 0.5) 71.43%, rgba(68, 53, 208, 0.5) 85.716%,rgba(62, 30, 204, 0.5) 85.716%, rgba(62, 30, 204, 0.5) 100.002%),linear-gradient(135deg, rgb(128, 8, 46) 0%, rgb(128, 8, 46) 14.286%,rgb(134, 43, 72) 14.286%, rgb(134, 43, 72) 28.572%,rgb(140, 77, 97) 28.572%, rgb(140, 77, 97) 42.858%,rgb(147, 112, 123) 42.858%, rgb(147, 112, 123) 57.144%,rgb(153, 146, 149) 57.144%, rgb(153, 146, 149) 71.43%,rgb(159, 181, 174) 71.43%, rgb(159, 181, 174) 85.716%,rgb(165, 215, 200) 85.716%, rgb(165, 215, 200) 100.002%);
 $main-heading-color : #fff;
 
 
@@ -13,8 +13,9 @@ $main-heading-color : #fff;
     align-items: center;
     overflow-y: auto;
     h1{
+        margin: 1rem;
         color: $main-heading-color;
-        font-size: 1.25em;
+        font-size: 1rem;
     }
 }
 
@@ -31,8 +32,9 @@ $main-heading-color : #fff;
         overflow-y: auto;
 
         h1{
+            margin: 1rem;
             color: $main-heading-color;
-            font-size: 1.25em;
+            font-size: 1rem;
         }
     } 
 }
@@ -49,5 +51,10 @@ $main-heading-color : #fff;
         flex-direction: column;
         align-items: center;
         overflow-y: auto;
+        h1{
+            margin: 1rem;
+            color: $main-heading-color;
+            font-size: 1rem;
+        }
     } 
 }

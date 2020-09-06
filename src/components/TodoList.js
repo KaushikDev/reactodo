@@ -9,7 +9,9 @@ const TodoList = () => {
 
     const addToList = ( task ) => {
         const updatedTodoList = [ ...todos, task];
-        setTodos(updatedTodoList);
+        const doneTodos = updatedTodoList.filter(item => {return (item.done)});
+        const notDoneTodos = updatedTodoList.filter(item => {return (!item.done) });
+        setTodos([...notDoneTodos, ...doneTodos]);
     }
 
     const removeTodo = (index) => {
@@ -21,19 +23,18 @@ const TodoList = () => {
     const markStatus = (index) => {
         const updatedTodos = [...todos];
         updatedTodos[index].done = !updatedTodos[index].done;
-        //setTodos(updatedTodos);
-        const doneTodos = updatedTodos.filter(todo => {if(todo.done) return todo});
-        const notDoneTodos = updatedTodos.filter(todo => {if(!todo.done) return todo});
+        const doneTodos = updatedTodos.filter(item => {return (item.done)});
+        const notDoneTodos = updatedTodos.filter(item => {return (!item.done) });
         setTodos([...notDoneTodos, ...doneTodos]);
 
 }
     return(
         <div className="todo__list">
-            <h1>What is your main focus for today?</h1>
+            <h1>Task Manager</h1>
             <TodoForm addToList={addToList} />
             {todos.length ? todos.map((todo, index) => {
                 return <TodoItem key={`${index} - ${todo}`} todo={todo} index={index} removeTodo={removeTodo} markStatus={markStatus}/>
-            }) : "Add a task to get started !" }
+            }) : "" }
         </div>
     );
 
