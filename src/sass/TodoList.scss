@@ -1,4 +1,5 @@
-$list-color : #000;
+$list-color : repeating-linear-gradient(45deg, rgb(27, 27, 27) 0px, rgb(27, 27, 27) 97px,rgb(24, 24, 24) 97px, rgb(24, 24, 24) 194px,rgb(20, 20, 20) 194px, rgb(20, 20, 20) 291px);
+$main-heading-color : #fff;
 
 
 .todo__list{
@@ -11,6 +12,10 @@ $list-color : #000;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
+    h1{
+        color: $main-heading-color;
+        font-size: 1.25em;
+    }
 }
 
 @media screen and (min-width: 280px) and (max-width: 768px){
@@ -24,6 +29,11 @@ $list-color : #000;
         flex-direction: column;
         align-items: center;
         overflow-y: auto;
+
+        h1{
+            color: $main-heading-color;
+            font-size: 1.25em;
+        }
     } 
 }
 

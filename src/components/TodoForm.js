@@ -26,10 +26,10 @@ const TodoForm = ({ addToList }) => {
         onChange={(event) => setTask({ text: event.target.value, done: false })}
       />
       <button className="form__fields">
-        <FontAwesomeIcon
-          icon={faPlusSquare}
+        {/* <FontAwesomeIcon
+          icon={faPlusCircle}
           style={{ color: "#2E7D32", fontSize: "1.75rem" }}
-        />
+        /> */}Add
       </button>
     </form>
   );

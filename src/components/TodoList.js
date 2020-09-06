@@ -29,6 +29,7 @@ const TodoList = () => {
 }
     return(
         <div className="todo__list">
+            <h1>What is your main focus for today?</h1>
             <TodoForm addToList={addToList} />
             {todos.length ? todos.map((todo, index) => {
                 return <TodoItem key={`${index} - ${todo}`} todo={todo} index={index} removeTodo={removeTodo} markStatus={markStatus}/>
