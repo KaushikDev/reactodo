@@ -15,8 +15,8 @@ $main-heading-color : #fff;
     h1{
         margin: 1rem;
         color: $main-heading-color;
-        font-size: 1rem;
-    }
+        font-size: 1.25em;
+       }
 }
 
 @media screen and (min-width: 280px) and (max-width: 768px){
@@ -34,7 +34,7 @@ $main-heading-color : #fff;
         h1{
             margin: 1rem;
             color: $main-heading-color;
-            font-size: 1rem;
+            font-size: 1.25em;
         }
     } 
 }
@@ -54,7 +54,7 @@ $main-heading-color : #fff;
         h1{
             margin: 1rem;
             color: $main-heading-color;
-            font-size: 1rem;
+            font-size: 1.25em;
         }
     } 
 }

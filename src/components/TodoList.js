@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 import "../sass/TodoList.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClipboardList} from "@fortawesome/free-solid-svg-icons";
 
 const TodoList = () => {
     const [todos, setTodos] = useState([]);  
@@ -30,7 +31,7 @@ const TodoList = () => {
 }
     return(
         <div className="todo__list">
-            <h1>Task Manager</h1>
+            <FontAwesomeIcon icon={faClipboardList} style={{fontSize:"1.5rem", margin:"1rem", color:"#fff"}}/>
             <TodoForm addToList={addToList} />
             {todos.length ? todos.map((todo, index) => {
                 return <TodoItem key={`${index} - ${todo}`} todo={todo} index={index} removeTodo={removeTodo} markStatus={markStatus}/>

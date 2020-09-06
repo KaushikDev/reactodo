@@ -1,5 +1,5 @@
 .todo__item{
-    border-bottom: 1px solid #FF9B9C;
+    border-bottom: 1px solid #FF80AB;
     padding: 1rem;
     width: 90%;
     height: auto;
@@ -13,20 +13,20 @@
        width: auto;
        font-size: 1.2rem;
        cursor: pointer;
-       color: #fff;
+       color: #FCE4EC;
     }
 
     span{
         width: auto;
         font-weight: bolder;
-        color:#fff ;
+        color:#FCE4EC ;
         
     }
 
     .completed{
-        text-decoration-line: line-through;
-        text-decoration-color: #FAF4D0;
-        color: #FAF4D0;
+        // text-decoration-line: line-through;
+        // text-decoration-color: #FAF4D0;
+        color: #FF4081;
         font-style: italic;
     }
 }
